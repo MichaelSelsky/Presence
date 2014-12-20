@@ -10,12 +10,18 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
+    var window :UIWindow?
+    let kClientID = "12256b9c2c824ccc94c90a47f5282448"
+    let kCallbackURL = "PresenceApp://loginRedirect"
+    //TODO: add in Swap URL
+    let kTokenSwapURL = "http://api.presenceapp.net/register/ios"
+    
+    var session:Session?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
         return true
     }
 
@@ -39,6 +45,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String, annotation: AnyObject?) -> Bool {
+        let auth = SPTAuth.defaultInstance()
+        
+            auth.handleAuthCallbackWithTriggeredAuthURL(url, tokenSwapServiceEndpointAtURL: NSURL(string: kTokenSwapURL), callback: { (error, spotifySession) -> Void in
+                if (error != nil) {
+                    
+                    return
+                } else {
+                    
+                    
+                    self.session = Session(spotifySession: spotifySession)
+                    self.session?.start()
+                }
+                
+            })
+            
+            return true
     }
 
 

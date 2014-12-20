@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75067A2619E0FBB900CF7CBB /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75067A2519E0FBB900CF7CBB /* GameController.framework */; };
+		75067A2819E11F1200CF7CBB /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75067A2719E11F1200CF7CBB /* Spotify.framework */; };
 		7588493919E05F6C00B349FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588493819E05F6C00B349FA /* AppDelegate.swift */; };
 		7588493B19E05F6C00B349FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588493A19E05F6C00B349FA /* ViewController.swift */; };
 		7588493E19E05F6C00B349FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7588493C19E05F6C00B349FA /* Main.storyboard */; };
 		7588494019E05F6C00B349FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7588493F19E05F6C00B349FA /* Images.xcassets */; };
 		7588494319E05F6C00B349FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7588494119E05F6C00B349FA /* LaunchScreen.xib */; };
 		7588494F19E05F6C00B349FA /* PresenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588494E19E05F6C00B349FA /* PresenceTests.swift */; };
+		7588496119E0896700B349FA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588496019E0896700B349FA /* LocationManager.swift */; };
+		7588496319E0925600B349FA /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588496219E0925600B349FA /* Session.swift */; };
+		7588496519E093C700B349FA /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7588496419E093C700B349FA /* NetworkingManager.swift */; };
+		75B9D9E419E0FAF70026C01D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B9D9E319E0FAF70026C01D /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75067A2519E0FBB900CF7CBB /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		75067A2719E11F1200CF7CBB /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		7588493319E05F6C00B349FA /* Presence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Presence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7588493719E05F6C00B349FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7588493819E05F6C00B349FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +44,11 @@
 		7588494819E05F6C00B349FA /* PresenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresenceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7588494D19E05F6C00B349FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7588494E19E05F6C00B349FA /* PresenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenceTests.swift; sourceTree = "<group>"; };
+		7588496019E0896700B349FA /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		7588496219E0925600B349FA /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		7588496419E093C700B349FA /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		75B9D9E219E0FACC0026C01D /* Presence-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Presence-Bridging-Header.h"; sourceTree = "<group>"; };
+		75B9D9E319E0FAF70026C01D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75067A2619E0FBB900CF7CBB /* GameController.framework in Frameworks */,
+				75067A2819E11F1200CF7CBB /* Spotify.framework in Frameworks */,
+				75B9D9E419E0FAF70026C01D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +75,10 @@
 		7588492A19E05F6C00B349FA = {
 			isa = PBXGroup;
 			children = (
+				75067A2719E11F1200CF7CBB /* Spotify.framework */,
+				75067A2519E0FBB900CF7CBB /* GameController.framework */,
+				75B9D9E319E0FAF70026C01D /* AVFoundation.framework */,
+				75B9D9E219E0FACC0026C01D /* Presence-Bridging-Header.h */,
 				7588493519E05F6C00B349FA /* Presence */,
 				7588494B19E05F6C00B349FA /* PresenceTests */,
 				7588493419E05F6C00B349FA /* Products */,
@@ -78,6 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				7588493819E05F6C00B349FA /* AppDelegate.swift */,
+				7588496019E0896700B349FA /* LocationManager.swift */,
+				7588496219E0925600B349FA /* Session.swift */,
+				7588496419E093C700B349FA /* NetworkingManager.swift */,
 				7588493A19E05F6C00B349FA /* ViewController.swift */,
 				7588493C19E05F6C00B349FA /* Main.storyboard */,
 				7588493F19E05F6C00B349FA /* Images.xcassets */,
@@ -161,6 +184,12 @@
 				TargetAttributes = {
 					7588493219E05F6C00B349FA = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 3QF9A6C73L;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					7588494719E05F6C00B349FA = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -212,7 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7588496319E0925600B349FA /* Session.swift in Sources */,
+				7588496119E0896700B349FA /* LocationManager.swift in Sources */,
 				7588493B19E05F6C00B349FA /* ViewController.swift in Sources */,
+				7588496519E093C700B349FA /* NetworkingManager.swift in Sources */,
 				7588493919E05F6C00B349FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +304,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Selsky (5BM87HSVW9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Selsky (5BM87HSVW9)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -292,6 +325,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -314,7 +348,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Selsky (5BM87HSVW9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Selsky (5BM87HSVW9)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -327,6 +362,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -335,20 +371,38 @@
 		7588495319E05F6C00B349FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Presence",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Presence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Presence-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		7588495419E05F6C00B349FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Presence",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Presence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Presence-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -356,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Selsky (5BM87HSVW9)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -367,6 +422,7 @@
 				INFOPLIST_FILE = PresenceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Presence.app/Presence";
 			};
 			name = Debug;
@@ -375,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Selsky (5BM87HSVW9)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -382,6 +439,7 @@
 				INFOPLIST_FILE = PresenceTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Presence.app/Presence";
 			};
 			name = Release;
@@ -405,6 +463,7 @@
 				7588495419E05F6C00B349FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7588495519E05F6C00B349FA /* Build configuration list for PBXNativeTarget "PresenceTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +472,7 @@
 				7588495719E05F6C00B349FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
